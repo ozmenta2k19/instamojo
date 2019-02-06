@@ -21,8 +21,8 @@ try {
         "send_sms" => true,
         "email" => $email,
         'allow_repeated_payments' => false,
-        "redirect_url" => "http://instamojo-otest.herokuapp.com/thankyou.php",
-        "webhook" => "http://instamojo-otest.herokuapp.com/webhook.php"
+        "redirect_url" => "https://instamojo-otest.herokuapp.com/thankyou.php",
+        "webhook" => "https://instamojo-otest.herokuapp.com/webhook.php"
         ));
     //print_r($response);
 
