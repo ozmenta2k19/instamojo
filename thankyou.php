@@ -35,7 +35,7 @@
 
 include 'src/instamojo.php';
 
-$api = new Instamojo\Instamojo('test_9bdab14e168b9a564206bfc79c2', 'test_c25fc5215576fb30c32465d974a','https://test.instamojo.com/api/1.1/');
+$api = new Instamojo\Instamojo('d89259788f0bae8441794d8cc9a2f995', '549de66dc02dff5047dcdc4e9378f8d1','https://instamojo.com/api/1.1/');
 
 $payid = $_GET["payment_request_id"];
 
@@ -45,8 +45,8 @@ try {
 
 
     echo "<h4>Payment ID: " . $response['payments'][0]['payment_id'] . "</h4>" ;
-    echo "<h4>Payment Name: " . $response['payments'][0]['buyer_name'] . "</h4>" ;
-    echo "<h4>Payment Email: " . $response['payments'][0]['buyer_email'] . "</h4>" ;
+    echo "<h4>Payer ID: " . $response['payments'][0]['buyer_name'] . "</h4>" ;
+    echo "<h4>Payer Email: " . $response['payments'][0]['buyer_email'] . "</h4>" ;
 
     ?>
 

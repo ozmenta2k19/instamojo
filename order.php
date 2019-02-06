@@ -1,7 +1,7 @@
 <?php 
 
     $prd_name = "Web Development with Flask";
-	$price = 100;
+	$price = 500;
 
 	// Price calculation with tax and fee
 	$fee = 3 +($price*.02);
