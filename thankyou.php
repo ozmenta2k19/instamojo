@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Thank You, Mojo</title>
+    <title>Thank You</title>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -25,8 +25,7 @@
     <div class="container">
 
       <div class="page-header">
-        <h1><a href="index.php">Instamojo Payment</a></h1>
-        <p class="lead">A test payment integration for instamojo paypemnt gateway. Written in PHP</p>
+        <h1><a href="index.php">Ozmenta 2k19</a></h1>
       </div>
 
       <h3 style="color:#6da552">Thank You, Payment succus!!</h3>
@@ -49,9 +48,6 @@ try {
     echo "<h4>Payment Name: " . $response['payments'][0]['buyer_name'] . "</h4>" ;
     echo "<h4>Payment Email: " . $response['payments'][0]['buyer_email'] . "</h4>" ;
 
-  echo "<pre>";
-   print_r($response);
-echo "</pre>";
     ?>
 
 

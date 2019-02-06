@@ -1,38 +1,11 @@
 <?php 
 
-if(isset($_GET['id']) && $_GET['id'] == 100){
-
-    $prd_name = "Jeans Mens #100";
+    $prd_name = "Web Development with Flask";
 	$price = 100;
 
 	// Price calculation with tax and fee
 	$fee = 3 +($price*.02);
-	$tax = $fee * .15;
-	$prd_price = $fee + $tax + $price;	
-
-	
- } 
- 	else if(isset($_GET['id']) && $_GET['id'] == 101){
-    $prd_name = "T Shirt Mens #101";
-   	$price = 200;
-
-	// Price calculation with tax and fee
-	$fee = 3 +($price*.02);
-	$tax = $fee * .15;
-	$prd_price = $fee+ $tax + $price;	
- } 
- 	else if(isset($_GET['id']) && $_GET['id'] == 102){
-    $prd_name = "Sunglass Mens #102";
-    $price = 1000;
-
-	// Price calculation with tax and fee
-	$fee = 3 +($price*.02);
-	$tax = $fee * .15;
-	$prd_price = $fee+ $tax + $price;	
- } else {
-
- 	echo "No such a prodcut to purchase :(";
- 	exit();
+	$prd_price = $fee + $price;	
  }
 
  ?>
@@ -50,7 +23,7 @@ if(isset($_GET['id']) && $_GET['id'] == 100){
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Payment Mojo</title>
+    <title>Payment</title>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -66,17 +39,16 @@ if(isset($_GET['id']) && $_GET['id'] == 100){
     <div class="container">
 
       <div class="page-header">
-        <h1><a href="index.php">Instamojo Payment</a></h1>
-        <p class="lead">A test payment integration for instamojo payment gateway. Written in PHP</p>
+        <h1><a href="index.php">Ozmenta 2k19</a></h1>
       </div>
 
 		<p>
-		<b>Product name :</b> <?php echo $prd_name; ?>
+		<b>Name of workshop :</b> Web Development with Flask
 		</p>
 		<p>
 		<b>Price : </b> <?php echo $price; ?>
 		</p>
-		<p><b>Bank Fee : </b> <?php echo $tax + $fee ; ?> <small> (Rs:3+ 2% of fee+ 15% Service Tax)</small></p>
+		<p><b>Bank Fee : </b> <?php echo $fee ; ?> <small> (Rs:3+ 2% of fee)</small></p>
 
 		<p><b>Total : </b> <?php echo $prd_price; ?></p>
 
@@ -88,8 +60,8 @@ if(isset($_GET['id']) && $_GET['id'] == 100){
 		<input type="hidden" name="product_price" value="<?php echo $prd_price; ?>"> 
 
 		<div class="form-group">
-    	<label>Your Name</label>
-   		<input type="text" class="form-control" name="name" placeholder="Enter your name">	 <br/>
+    	<label>Your Registration ID</label>
+   		<input type="text" class="form-control" name="name" placeholder="Can be found in the mail sent to you">	 <br/>
 		</div>
 
 		<div class="form-group">
