@@ -12,7 +12,7 @@ $api = new Instamojo\Instamojo('d89259788f0bae8441794d8cc9a2f995', '549de66dc02d
 
 
 try {
-    print(1)
+    print(1);
     $response = $api->paymentRequestCreate(array(
         "purpose" => $product_name,
         "amount" => $price,
