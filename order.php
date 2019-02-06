@@ -6,7 +6,6 @@
 	// Price calculation with tax and fee
 	$fee = 3 +($price*.02);
 	$prd_price = $fee + $price;	
- }
 
  ?>
 
