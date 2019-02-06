@@ -24,7 +24,7 @@ try {
         "redirect_url" => "https://instamojo-otest.herokuapp.com/thankyou.php",
         "webhook" => "https://instamojo-otest.herokuapp.com/webhook.php"
         ));
-    //print_r($response);
+    print_r($response);
 
     $pay_ulr = $response['longurl'];
     
