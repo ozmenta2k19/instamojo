@@ -13,7 +13,6 @@ include 'src/instamojo.php';
 try {
     $api = new Instamojo\Instamojo('d89259788f0bae8441794d8cc9a2f995', '549de66dc02dff5047dcdc4e9378f8d1','https://www.instamojo.com/api/1.1/payment-requests/');
 
-    print(1);
     $response = $api->paymentRequestCreate(array(
         "purpose" => $product_name,
         "amount" => $price,
@@ -23,11 +22,10 @@ try {
         "send_sms" => true,
         "email" => $email,
         'allow_repeated_payments' => false,
-        "redirect_url" => "https://instamojo-otest.herokuapp.com/thankyou.php",
-        "webhook" => "https://instamojo-otest.herokuapp.com/webhook.php"
+        "redirect_url" => "http://instamojo-otest.herokuapp.com/thankyou.php",
+        "webhook" => "http://instamojo-otest.herokuapp.com/webhook.php"
         ));
-    print_r($response);
-
+    
     $pay_ulr = $response['longurl'];
     
     //Redirect($response['longurl'],302); //Go to Payment page
